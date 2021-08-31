@@ -13,16 +13,13 @@ function App() {
       isCompleted: false,
     },
   ]);
-  const [value, setValue] = React.useState(""); //add new managed variable
 
   //handling what happens when user hits submit
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!value) return; //check for existing value
-    const newTodos = [...todos, { text: value, isCompleted: false }]; //construct new list -existing list plus new todo
+  const addTodo = (text) => {
+    const newTodos = [...todos, { text: text, isCompleted: false }]; //construct new list -existing list plus new todo
     setTodos(newTodos); //add input
-    setValue(""); //clear form
   };
+
   const removeTodo = (e) => {
     const index = Number(e.target.id);
     let temp = [...todos];
@@ -36,15 +33,7 @@ function App() {
           {todo.text}
         </div>
       ))}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className="input"
-          value={value}
-          placeholder="Add ToDo ..."
-          onChange={(e) => setValue(e.target.value)}
-        />
-      </form>
+      <TodoForm addTodo={addTodo} />
     </>
   );
 }
