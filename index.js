@@ -15,24 +15,26 @@ function App() {
   ]);
 
   //handling what happens when user hits submit
-  const addTodo = text => {
+  const addTodo = (text) => {
     const newTodos = [...todos, { text: text, isCompleted: false }]; //construct new list -existing list plus new todo
     setTodos(newTodos); //add input
-  }
+  };
 
-  const removeTodo = index => {
+  const removeTodo = (index) => {
     let temp = [...todos];
     temp.splice(index, 1);
     setTodos(temp);
   };
   return (
-    <>
-      {todos.map((todo, i) => (
-        <Todo index={i} key={i} todo={todo} remove={removeTodo}/>
-      ))}
-      <TodoForm addTodo={addTodo} />
-    </>
+      <div className="app">
+        <div className="todo-list">
+          {todos.map((todo, i) => (
+            <Todo index={i} key={i} todo={todo} remove={removeTodo} />
+          ))}
+          <TodoForm addTodo={addTodo} />
+        </div>
+      </div>
   );
 }
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

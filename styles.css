@@ -1,29 +1,33 @@
 body {
   margin: 0;
-  font-family: "Arial";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Arial";
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+  padding-left: 35px;
 }
 
 .app {
-  background: #209cee;
+  background: #8d26ee;
   padding: 30px;
   height: 100vh;
 }
 
 .todo-list {
-  background: e8e8e8;
+  background: #c08af5;
   border-radius: 4px;
   padding: 5px;
   max-width: 400px;
 }
 
 .todo {
-  background: #fff;
+  background: #f7ee6f;
   box-shadow: 1px 1px 1px rgba(0, 0, 0 0.15);
   padding: 3px 10px;
   font-size: 24px;
@@ -35,6 +39,8 @@ code {
 }
 
 .input {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: #f7ee6f;
   width: 100%;
   box-sizing: border-box;
   border: 0;
