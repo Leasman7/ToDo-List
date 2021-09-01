@@ -13,5 +13,5 @@ Add and remove list items
 ## Roadmap:  
 Additional styling would be the only thing that I may add 
 
-##License:  
+## License:  
 This project is licensed under the MIT license as described in included license file.  
