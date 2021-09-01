@@ -1,4 +1,4 @@
-function TodoForm(addTodo) {
+function TodoForm({addTodo}) {
   const [value, setValue] = React.useState(""); //add new managed variable
 
   const handleSubmit = (e) => {
