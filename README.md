@@ -5,8 +5,8 @@ ToDo list with adding and removing of items
 Download index.html, index.js, form.js, styles.css, and todo.js.  
 Save the files in the same folder.  
 Run a local server:  
-    npm install --global http-server  
-    http-server -c-1  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;npm install --global http-server  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http-server -c-1  
 Navigate to localhost:8080 in browser  
 Add and remove list items
 
